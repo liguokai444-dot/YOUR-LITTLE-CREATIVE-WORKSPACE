@@ -52,7 +52,7 @@ stop.cmd
 
 也可以使用 `npm run stop`。停止入口只通过本机受保护的控制接口停止这个项目，不会执行“关闭全部 node.exe”之类的操作。服务信息、控制密钥与日志位于 `.runtime/`，已被 Git 忽略，且不会通过网页公开。
 
-需要保持前台运行并通过 Ctrl+C 停止时，使用 `npm run serve`。旧版通过 ShunCode / Git Bash 启动的服务，可以在启动它的那个终端按 Ctrl+C。
+需要保持前台运行并通过 Ctrl+C 停止时，使用 `npm run serve`。旧版通过 Git Bash 启动的服务，可以在启动它的那个终端按 Ctrl+C。
 
 ### Git Bash / macOS / Linux
 
