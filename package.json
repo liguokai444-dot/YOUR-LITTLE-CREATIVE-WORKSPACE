@@ -1,0 +1,51 @@
+{
+  "name": "html-studio",
+  "version": "1.0.0",
+  "description": "A private, local-first HTML playground",
+  "scripts": {
+    "test": "playwright test",
+    "dev": "node scripts/vite-task.mjs dev",
+    "build": "node scripts/vite-task.mjs build",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "node scripts/launcher.cjs start",
+    "test:e2e": "playwright test",
+    "start:lan": "node scripts/launcher.cjs start --lan",
+    "stop": "node scripts/launcher.cjs stop",
+    "status": "node scripts/launcher.cjs status",
+    "serve": "node scripts/serve-studio.mjs",
+    "test:service": "node --test tests/service.test.mjs",
+    "check:privacy": "node scripts/privacy-check.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-html": "^6.4.12",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/search": "^6.7.2",
+    "@codemirror/view": "^6.43.15",
+    "@lezer/highlight": "^1.2.5",
+    "@uiw/react-codemirror": "^4.25.12",
+    "lucide-react": "^1.65.0",
+    "prettier": "^3.9.10",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^22.19.17",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
